@@ -1,0 +1,5 @@
+// "Imply" the base bootstrap variables
+@import "../bootstrap/less/variables.lessimport";
+
+// Define overrides/additions below (these are Bootstrap variables)
+@icon-font-path: "/packages/bootstrap/fonts/";

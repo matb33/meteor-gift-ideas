@@ -1,0 +1,9 @@
+<template name="ideas">
+	{{#with ideas}}
+		<ul class="ideas list-group">
+			{{#each this}}
+				{{> idea}}
+			{{/each}}
+		</ul>
+	{{/with}}
+</template>

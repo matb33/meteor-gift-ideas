@@ -1,0 +1,53 @@
+@import "../app-bootstrap/variables.lessimport";
+@import "variables.lessimport";
+@import "mixins.lessimport";
+
+.scrollable {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.vertical-center-container {
+	display: table;
+	vertical-align: middle;
+
+	&.full-page {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.vertical-center {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.color-brand-primary 	{ color: @brand-primary; }
+.color-gray-darker		{ color: @gray-darker; }
+.color-gray-dark		{ color: @gray-dark; }
+.color-gray				{ color: @gray; }
+.color-gray-light		{ color: @gray-light; }
+.color-gray-lighter		{ color: @gray-lighter; }
+
+.text-shadow {
+	text-shadow: 0 0 15px fadeout(@gray-darker, 60%);
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.slash-sep {
+	span::before {
+		content: " / ";
+	}
+
+	span:first-child::before,
+	span:empty::before {
+		content: "";
+	}
+}

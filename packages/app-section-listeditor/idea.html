@@ -1,0 +1,15 @@
+<template name="idea">
+	<li class="idea list-group-item {{#if checked}}list-group-item-success{{/if}}">
+		<div class="row">
+			<div class="col-xs-1 col-check">
+				<input type="checkbox" name="check" checked={{checked}} />
+			</div>
+			<div class="col-xs-10 col-text">
+				<input type="text" name="text" value="{{text}}" class="form-control" />
+			</div>
+			<div class="col-xs-1 col-del">
+				<button type="button" class="close" name="del" aria-hidden="true">&times;</button>
+			</div>
+		</div>
+	</li>
+</template>

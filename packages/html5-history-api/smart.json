@@ -1,0 +1,9 @@
+{
+  "name": "HTML5-History-API",
+  "description": "HTML5 History API expansion for browsers not supporting pushState, replaceState",
+  "homepage": "https://github.com/tmeasday/meteor-HTML5-History-API",
+  "author": "Tom Coleman <tom@thesnail.org>",
+  "version": "4.0.0",
+  "git": "https://github.com/tmeasday/meteor-HTML5-History-API.git",
+  "packages": {}
+}
