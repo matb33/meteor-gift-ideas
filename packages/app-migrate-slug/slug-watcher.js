@@ -13,6 +13,7 @@ Deps.autorun(function (o) {
 
 			try {
 				var list = JSON.parse(listStore);
+				if (list.slug === slug) return;
 				console.log("Migrate from", list.slug, "to", slug);
 				Lists.remove({_id: list._id});	// will remove related Ideas too
 				list.slug = slug;

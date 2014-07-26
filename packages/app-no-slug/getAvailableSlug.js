@@ -33,7 +33,6 @@ function getUniqueSlug(start, end, tries) {
 
 Meteor.methods({
 	getAvailableSlug: function () {
-		console.log("sddf", getUniqueSlug(3, 50, 10))
 		return getUniqueSlug(3, 50, 10);
 	}
 });

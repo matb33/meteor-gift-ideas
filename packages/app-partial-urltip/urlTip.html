@@ -1,5 +1,12 @@
 <template name="urlTip">
-	<div class="alert alert-info">
-		<p>Don't want the URL to be bdayideas.net/___? Change the URL above at any time! Tip: try something easy to remember, like your kid's favorite toy or something related to the birthday theme.</p>
-	</div>
+	{{#if show}}
+		<div class="alert alert-info alert-dismissible" role="alert">
+			<button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			<strong>Don't want the URL to be bdayideas.net/{{slug}}?</strong><br />
+			Change the part after the <strong>/</strong> in the browser address bar at any time!<br />
+			<br />
+			<em>Tip: use something catchy or memorable, perhaps related to the birthday theme.</em><br />Example: <u>bdayideas.net/minecraft</u>. Don't be surprised if someone is already using it though! Be creative!
+		</div>
+	{{/if}}
 </template>

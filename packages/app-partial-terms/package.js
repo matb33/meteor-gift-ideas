@@ -8,6 +8,7 @@ Package.on_use(function (api) {
 	]);
 
 	api.add_files([
-		"terms.html"
+		"terms.html",
+		"copyright.html"
 	], "client");
 });

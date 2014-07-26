@@ -50,4 +50,8 @@ Package.on_use(function (api) {
 		"less/variables.lessimport",
 		"less/wells.lessimport"
 	], "client");
+
+	api.add_files([
+		"js/alert.js"
+	], "client");
 });

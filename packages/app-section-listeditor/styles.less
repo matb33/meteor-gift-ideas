@@ -1,12 +1,23 @@
 @import "../app-bootstrap/mixins.lessimport";
+@import "../app-bootstrap/variables.lessimport";
 
 .idea {
-	input {
-		vertical-align: middle;
+	.check {
+		&.checked {
+			background-color: @brand-success;
+		}
+
+		input {
+			vertical-align: middle;
+		}
+
+		&, input {
+			cursor: pointer;
+		}
 	}
 
-	input[type='checkbox'],
-	.col-check {
-		cursor: pointer;
+	.input-group-lg > .input-group-btn.del > .btn {
+		font-size: 28px;
+		padding: 8px 16px;
 	}
 }

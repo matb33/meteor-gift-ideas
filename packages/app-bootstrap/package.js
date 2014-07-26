@@ -13,4 +13,10 @@ Package.on_use(function (api) {
 		"mixins.lessimport",
 		"bootstrap.less"
 	], "client");
+
+	// Amelia theme from bootswatch.com
+	api.add_files([
+		"amelia/variables.lessimport",
+		"amelia/bootswatch.lessimport"
+	], "client");
 });

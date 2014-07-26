@@ -4,6 +4,7 @@ Meteor.Router.add({
 		and: function (slug) {
 			Session.set("slugChanged", true);
 			Session.set("slug", slug);
+			window.localStorage["slug"] = slug;
 		}
 	}
 });

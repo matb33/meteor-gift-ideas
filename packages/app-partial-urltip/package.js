@@ -8,6 +8,7 @@ Package.on_use(function (api) {
 	]);
 
 	api.add_files([
-		"urlTip.html"
+		"urlTip.html",
+		"urlTip.js"
 	], "client");
 });

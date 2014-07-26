@@ -5,6 +5,7 @@ Package.describe({
 Package.on_use(function (api) {
 	api.use([
 		"templating",
+		"less",
 		"app-bootstrap",
 		"app-fontawesome"
 	]);
@@ -18,6 +19,7 @@ Package.on_use(function (api) {
 	]);
 
 	api.add_files([
-		"index.html"
+		"index.html",
+		"styles.less"
 	], "client");
 });

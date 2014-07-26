@@ -14,6 +14,7 @@ Template.addIdea.events({
 
 		Ideas.insert({text: text}, function (err, result) {
 			if (!err) Session.set("ideaText", "");
+			var $text = template.$("[name='text']");
 			$text.focus();
 		});
 	},
