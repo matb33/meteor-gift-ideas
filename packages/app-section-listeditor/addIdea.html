@@ -1,10 +1,10 @@
 <template name="addIdea">
-	<h2 class="text-center">Share a gift idea<br /><small>Give the other parents a bit of guidance!</small></h2>
+	<h2 class="text-center">Share a gift idea<br /><em><small>Give the other parents a bit of guidance!</small></em></h2>
 	<form role="form" class="add-idea">
-		<div class="input-group">
-			<input type="text" name="text" value="{{ideaText}}" class="form-control input-lg" />
+		<div class="input-group input-group-lg">
+			<input type="text" name="text" value="{{ideaText}}" class="form-control" />
 			<span class="input-group-btn">
-				<button type="submit" name="add" class="btn btn-primary btn-lg" disabled={{disabled}}>Add</button>
+				<button type="submit" name="add" class="btn btn-primary" disabled={{disabled}}>Add</button>
 			</span>
 		</div>
 	</form>

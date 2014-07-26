@@ -19,4 +19,10 @@ Package.on_use(function (api) {
 		"amelia/variables.lessimport",
 		"amelia/bootswatch.lessimport"
 	], "client");
+
+	// Superhero theme from bootswatch.com
+	api.add_files([
+		"superhero/variables.lessimport",
+		"superhero/bootswatch.lessimport"
+	], "client");
 });
