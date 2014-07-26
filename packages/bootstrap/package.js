@@ -52,6 +52,7 @@ Package.on_use(function (api) {
 	], "client");
 
 	api.add_files([
-		"js/alert.js"
+		"js/alert.js",
+		"js/tooltip.js"
 	], "client");
 });

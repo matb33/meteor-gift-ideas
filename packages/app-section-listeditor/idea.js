@@ -1,8 +1,23 @@
 var timeout;
 
 Template.idea.events({
-	"click [name='check'], click .check": function (evt, template) {
-		Ideas.update({_id: template.data._id}, {$set: {checked: !template.data.checked}});
+	"click .check": function (evt, template) {
+		var self = this;
+		var $check = template.$("[name='check']");
+		var checked = !template.data.checked;
+
+		Ideas.update({_id: template.data._id}, {$set: {checked: checked}});
+
+		Meteor.clearTimeout(self.tooltipTimeout);
+
+		if (checked) {
+			$check.tooltip("show");
+			self.tooltipTimeout = Meteor.setTimeout(function () {
+				$check.tooltip("hide");
+			}, 3000);
+		} else {
+			$check.tooltip("hide");
+		}
 	},
 	"keyup [name='text']": function (evt, template) {
 		var $text = template.$(evt.target);
@@ -33,5 +48,8 @@ Template.idea.events({
 		}
 
 		Ideas.remove({_id: template.data._id});
+
+		var $check = template.$("[name='check']");
+		$check.tooltip("hide");
 	}
 });

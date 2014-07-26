@@ -1,9 +1,9 @@
 <template name="idea">
 	<li class="idea">
 		<div class="input-group input-group-lg">
-			<span class="input-group-addon check {{#if checked}}checked{{/if}}"><input type="checkbox" name="check" checked={{checked}} /></span>
-			<input type="text" name="text" value="{{text}}" class="form-control" />
-			<span class="input-group-btn del"><button type="button" class="btn btn-default" name="del" aria-hidden="true">&times;</button></span>
+			<span class="input-group-addon check {{#if checked}}checked{{/if}}"><input type="checkbox" name="check" checked={{checked}} data-toggle="tooltip" data-placement="top" data-trigger="manual" data-container="body" title="Thanks, you've expressed interest in getting this!" /></span>
+			<input type="text" name="text" value="{{text}}" class="form-control {{#if checked}}has-success{{/if}}" />
+			<span class="input-group-btn del"><button type="button" class="btn btn-danger" name="del" aria-hidden="true">&times;</button></span>
 		</div>
 	</li>
 </template>
