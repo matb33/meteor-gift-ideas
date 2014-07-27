@@ -9,6 +9,7 @@ Package.on_use(function (api) {
 		"session",
 		"templating",
 		"less",
+		"underscore",
 		"app-bootstrap",
 		"app-models-lists-ideas"
 	]);

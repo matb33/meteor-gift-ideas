@@ -1,11 +1,11 @@
 <template name="addIdea">
 	<hgroup class="add-idea">
-		<h2 class="text-center">Share a gift idea</h2>
-		<h6 class="text-center"><em>Give the other parents a bit of guidance!</em></h6>
+		<h2 class="text-center">Add a gift idea to the list</h2>
+		<h6 class="text-center"><em>Give some guidance to the others!</em></h6>
 	</hgroup>
 	<form role="form" class="add-idea">
 		<div class="input-group input-group-lg">
-			<input type="text" name="text" value="{{ideaText}}" class="form-control" />
+			<input type="text" name="text" value="{{ideaText}}" class="form-control" placeholder="e.g. {{ideaExample}}" />
 			<span class="input-group-btn">
 				<button type="submit" name="add" class="btn btn-primary" disabled={{disabled}}>Add</button>
 			</span>
