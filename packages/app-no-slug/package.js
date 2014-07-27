@@ -6,14 +6,14 @@ Package.on_use(function (api) {
 	api.use([
 		"router",
 		"templating",
+		"app-migrate-slug",
 		"app-models-lists-ideas"
 	]);
 
 	api.add_files([
 		"noSlug.html",
 		"noSlug.js",
-		"routing.js",
-		"routeToSlug.js"
+		"routing.js"
 	], "client");
 
 	api.add_files([

@@ -11,7 +11,9 @@ Package.on_use(function (api) {
 		"less",
 		"underscore",
 		"app-bootstrap",
-		"app-models-lists-ideas"
+		"app-models-lists-ideas",
+		"app-theme-shared",
+		"app-idea-examples"
 	]);
 
 	api.add_files([

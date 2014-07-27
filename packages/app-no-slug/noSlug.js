@@ -3,10 +3,10 @@ Template.noSlug.created = function () {
 	this.getting = true;
 
 	if (window.localStorage["slug"]) {
-		routeToSlug(window.localStorage["slug"]);
+		RouteToSlug(window.localStorage["slug"]);
 	} else {
 		Meteor.call("getAvailableSlug", function (err, slug) {
-			routeToSlug(slug);
+			RouteToSlug(slug);
 		});
 	}
 };

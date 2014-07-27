@@ -13,6 +13,7 @@ Package.on_use(function (api) {
 	api.use([
 		"app-no-slug",
 		"app-migrate-slug",
+		"app-partial-intro",
 		"app-partial-urltip",
 		"app-partial-terms",
 		"app-section-listeditor"

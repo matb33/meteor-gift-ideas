@@ -1,5 +1,14 @@
 var timeout;
 
+Template.idea.rendered = function () {
+	var self = this;
+	var $idea = this.$(self.firstNode);
+	var index = $idea.index();
+	Meteor.setTimeout(function () {
+		$idea.addClass("rendered");
+	}, 15 + (10 * index));
+};
+
 Template.idea.events({
 	"click .check": function (evt, template) {
 		var self = this;

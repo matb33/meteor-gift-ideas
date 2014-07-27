@@ -15,10 +15,10 @@ Package.on_use(function (api) {
 	], "client");
 
 	// Amelia theme from bootswatch.com
-	api.add_files([
-		"amelia/variables.lessimport",
-		"amelia/bootswatch.lessimport"
-	], "client");
+	// api.add_files([
+	// 	"amelia/variables.lessimport",
+	// 	"amelia/bootswatch.lessimport"
+	// ], "client");
 
 	// Superhero theme from bootswatch.com
 	api.add_files([

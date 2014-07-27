@@ -1,5 +1,3 @@
-@import "../app-bootstrap/mixins.lessimport";
-
 .make-perspective(@value: 1000) {
 	-webkit-perspective: @value;
 	-moz-perspective: @value;

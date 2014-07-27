@@ -13,10 +13,13 @@ Package.on_use(function (api) {
 	api.add_files([
 		"subscribe.js",
 		"migration-store.js",
-		"slug-watcher.js"
+		"slug-watcher.js",
+		"route-to-slug.js"
 	], "client");
 
 	api.add_files([
 		"publish.js"
 	], "server");
+
+	api.export("RouteToSlug");
 });
