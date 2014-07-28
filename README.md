@@ -1,7 +1,14 @@
 # Gift Ideas
 
-*Gift Ideas* is a simple Meteor application demonstrating the all-packages
-project structure technique.
+*Gift Ideas* is a simple Meteor application demonstrating the [all-packages
+project structure technique](www.matb33.me/2013/09/05/meteor-project-structure.html).
+
+This project also leverages the [Meteor EC2 install script](https://github.com/matb33/meteor-ec2-install)
+I developed and use in several of my production Meteor applications.
+
+See a production version of *Gift Ideas*: [ideas.gifttracker.net](http://ideas.gifttracker.net/).
+
+## About *Gift Ideas*
 
 The premise behind *Gift Ideas* is a simple gift idea list meant for parents
 organizing birthday parties for their kids who need to easily send gift ideas
