@@ -1,7 +1,6 @@
 Deps.autorun(function () {
 	// Keep newSlug in sync with the real slug
-	var slug = Session.get("slug");
-	Session.set("newSlug", slug);
+	Session.set("newSlug", Session.get("slug"));
 });
 
 Template.intro.slug = function () {

@@ -1,7 +1,7 @@
 @import "../app-bootstrap/variables.lessimport";
 
 //==============================================================================
-// Variables that are re-used across packages and are uch better suited to be
+// Variables that are re-used across packages and are much better suited to be
 // grouped together for clarity. Try not to add variables here unless it really
 // makes sense.
 //==============================================================================

@@ -37,28 +37,36 @@ Template.idea.events({
 		if (evt.keyCode === 13) delay = 500;
 		if (checked) delay = 750;
 
+		var func = function () {
+			Ideas.update({_id: template.data._id}, {$set: {text: value}});
+		};
+
 		Meteor.clearTimeout(timeout);
 		timeout = Meteor.setTimeout(function () {
 			if (checked) {
-				if (!confirm("Someone has expressed interest in getting this. Are you sure you want to change the text?")) {
+				confirm("Someone has expressed interest in getting this. Are you sure you want to change the text?", function (result) {
+					if (result) return func();
 					$text.val(template.data.text);
-					return;
-				}
+				});
+			} else {
+				func();
 			}
-
-			Ideas.update({_id: template.data._id}, {$set: {text: value}});
 		}, delay);
 	},
 	"click [name='del']": function (evt, template) {
+		var func = function () {
+			var $check = template.$("[name='check']");
+			$check.tooltip("hide");
+
+			Ideas.remove({_id: template.data._id});
+		};
+
 		if (template.data.checked) {
-			if (!confirm("Are you sure you want to remove this? Someone has expressed interest in getting it.")) {
-				return;
-			}
+			confirm("Are you sure you want to remove this gift idea? Someone has expressed interest in getting it.", function (result) {
+				result && func();
+			});
+		} else {
+			func();
 		}
-
-		Ideas.remove({_id: template.data._id});
-
-		var $check = template.$("[name='check']");
-		$check.tooltip("hide");
 	}
 });

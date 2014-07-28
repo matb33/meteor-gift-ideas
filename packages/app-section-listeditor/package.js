@@ -9,6 +9,7 @@ Package.on_use(function (api) {
 		"session",
 		"templating",
 		"less",
+		"jquery",
 		"underscore",
 		"app-bootstrap",
 		"app-models-lists-ideas",
@@ -27,6 +28,8 @@ Package.on_use(function (api) {
 		"ideas.js",
 		"idea.html",
 		"idea.js",
+		"removeList.html",
+		"removeList.js",
 		"styles.less"
 	], "client");
 

@@ -51,6 +51,8 @@ Package.on_use(function (api) {
 		"less/wells.lessimport"
 	], "client");
 
+	// Purposely not including all JS files (only need these two).
+	// Ideally these would be added through some sort of app configuration.
 	api.add_files([
 		"js/alert.js",
 		"js/tooltip.js"

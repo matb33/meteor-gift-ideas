@@ -11,6 +11,7 @@ Package.on_use(function (api) {
 	]);
 
 	api.use([
+		"app-alertify",
 		"app-no-slug",
 		"app-migrate-slug",
 		"app-partial-intro",
