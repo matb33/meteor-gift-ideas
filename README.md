@@ -19,11 +19,11 @@ More complex solutions exist but nearly always require logins.
 And of course simpler solutions exist (email, paper) but the logistics of
 sending these lists in a coordinated fashion gets tricky for the average parent,
 not to mention far trickier for the parents on the other end trying to
-communicate back their intentions.
+communicate back their intentions to other involved parents.
 
 ## Security
 
-There is no security -- anyone can can add/modify/delete any list. An important
+There is no security -- anyone can add/modify/delete any list. An important
 design goal of this application is to reduce friction for users to near zero.
 
 Authentication (logins etc) add a huge barrier to entry, so it was intentionally
