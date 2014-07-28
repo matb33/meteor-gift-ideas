@@ -1,7 +1,7 @@
 # Gift Ideas
 
 *Gift Ideas* is a simple Meteor application demonstrating the [all-packages
-project structure technique](www.matb33.me/2013/09/05/meteor-project-structure.html).
+project structure technique](http://www.matb33.me/2013/09/05/meteor-project-structure.html).
 
 This project also leverages the [Meteor EC2 install script](https://github.com/matb33/meteor-ec2-install)
 I developed and use in several of my production Meteor applications.
