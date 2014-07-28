@@ -17,7 +17,9 @@ to the invited kids' parents.
 More complex solutions exist but nearly always require logins.
 
 And of course simpler solutions exist (email, paper) but the logistics of
-sending these lists in a coordinated fashion gets tricky for the average user.
+sending these lists in a coordinated fashion gets tricky for the average parent,
+not to mention far trickier for the parents on the other end trying to
+communicate back their intentions.
 
 ## Security
 
