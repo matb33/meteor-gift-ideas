@@ -34,6 +34,8 @@ Template.idea.events({
 		var checked = template.data.checked;
 		var delay = 0;
 
+		if (value === template.data.text) return;
+
 		if (evt.keyCode === 13) delay = 500;
 		if (checked) delay = 750;
 
