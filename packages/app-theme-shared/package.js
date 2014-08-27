@@ -1,19 +1,22 @@
 Package.describe({
-	summary: "App theme shared variables and mixins, meant to be imported by other packages"
+	summary: "App theme shared variables and mixins, meant to be imported by other packages",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"less",
 		"app-bootstrap"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"variables.lessimport",
 		"mixins.lessimport"
 	], "client");
 
-	api.add_files([
+	api.addFiles([
 		"utilities.less"
 	], "client");
 });

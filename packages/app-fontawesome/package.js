@@ -1,14 +1,17 @@
 Package.describe({
-	summary: "App instantiation of FontAwesome (custom vars etc)"
+	summary: "App instantiation of FontAwesome (custom vars etc)",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"less",
 		"fontawesome"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"fontawesome.less"
 	], "client");
 });

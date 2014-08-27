@@ -1,4 +1,4 @@
 // "Imply" the base bootstrap mixins
-@import "../bootstrap/less/mixins.lessimport";
+@import "../bootstrap3/less/mixins.lessimport";
 
 // Define overrides/additions below

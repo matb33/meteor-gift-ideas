@@ -1,27 +1,30 @@
 Package.describe({
-	summary: "App instantiation of Bootstrap (custom vars etc)"
+	summary: "App instantiation of Bootstrap (custom vars etc)",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"less",
-		"bootstrap"
+		"bootstrap3"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"variables.lessimport",
 		"mixins.lessimport",
 		"bootstrap.less"
 	], "client");
 
 	// Amelia theme from bootswatch.com
-	// api.add_files([
+	// api.addFiles([
 	// 	"amelia/variables.lessimport",
 	// 	"amelia/bootswatch.lessimport"
 	// ], "client");
 
 	// Superhero theme from bootswatch.com
-	api.add_files([
+	api.addFiles([
 		"superhero/variables.lessimport",
 		"superhero/bootswatch.lessimport"
 	], "client");

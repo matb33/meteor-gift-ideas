@@ -1,23 +1,26 @@
 Package.describe({
-	summary: "App slug migration"
+	summary: "App slug migration",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
-		"router",
 		"deps",
 		"session",
+		"router",
 		"app-models-lists-ideas"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"subscribe.js",
 		"migration-store.js",
 		"slug-watcher.js",
 		"route-to-slug.js"
 	], "client");
 
-	api.add_files([
+	api.addFiles([
 		"publish.js"
 	], "server");
 

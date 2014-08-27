@@ -1,8 +1,11 @@
 Package.describe({
-	summary: "App root template"
+	summary: "App root template",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"templating",
 		"less",
@@ -20,7 +23,7 @@ Package.on_use(function (api) {
 		"app-section-listeditor"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"index.html",
 		"styles.less"
 	], "client");

@@ -1,0 +1,43 @@
+{
+  "dependencies": [
+    [
+      "app-bootstrap",
+      "1.0.0"
+    ],
+    [
+      "app-modernizr",
+      "1.0.0"
+    ],
+    [
+      "app-theme-shared",
+      "1.0.0"
+    ],
+    [
+      "bootstrap3",
+      "3.1.1"
+    ],
+    [
+      "jquery",
+      "1.0.0"
+    ],
+    [
+      "less",
+      "1.0.5"
+    ],
+    [
+      "meteor",
+      "1.0.2"
+    ],
+    [
+      "modernizr",
+      "2.6.2"
+    ],
+    [
+      "underscore",
+      "1.0.0"
+    ]
+  ],
+  "pluginDependencies": [],
+  "toolVersion": "meteor-tool@1.0.25",
+  "format": "1.0"
+}

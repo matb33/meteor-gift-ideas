@@ -1,22 +1,25 @@
 Package.describe({
-	summary: "App no slug handling"
+	summary: "App no slug handling",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
-		"router",
 		"templating",
+		"router",
 		"app-migrate-slug",
 		"app-models-lists-ideas"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"noSlug.html",
 		"noSlug.js",
 		"routing.js"
 	], "client");
 
-	api.add_files([
+	api.addFiles([
 		"getAvailableSlug.js"
 	], "server");
 });

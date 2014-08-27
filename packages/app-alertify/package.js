@@ -1,8 +1,11 @@
 Package.describe({
-	summary: "Alertify, modified for customizability"
+	summary: "Alertify, modified for customizability",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"less",
 		"app-modernizr",
@@ -10,7 +13,7 @@ Package.on_use(function (api) {
 		"app-theme-shared"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"alertify.js",
 		"overload.js",
 		"alertify.core.css",

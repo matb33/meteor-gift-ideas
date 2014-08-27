@@ -1,14 +1,17 @@
 Package.describe({
-	summary: "Twitter Bootstrap 3.1.1 (must be instantiated by an app package)"
+	summary: "Twitter Bootstrap 3.1.1 (must be instantiated by an app package)",
+	version: "3.1.1"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"less",
 		"jquery"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"less/alerts.lessimport",
 		"less/badges.lessimport",
 		"less/bootstrap.lessimport",
@@ -53,7 +56,7 @@ Package.on_use(function (api) {
 
 	// Purposely not including all JS files (only need these two).
 	// Ideally these would be added through some sort of app configuration.
-	api.add_files([
+	api.addFiles([
 		"js/alert.js",
 		"js/tooltip.js"
 	], "client");

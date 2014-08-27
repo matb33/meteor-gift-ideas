@@ -1,8 +1,11 @@
 Package.describe({
-	summary: "App intro area"
+	summary: "App intro area",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"templating",
 		"less",
@@ -11,7 +14,7 @@ Package.on_use(function (api) {
 		"app-migrate-slug"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"intro.html",
 		"intro.js",
 		"styles.less"

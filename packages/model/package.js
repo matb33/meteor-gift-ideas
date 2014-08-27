@@ -1,13 +1,16 @@
 Package.describe({
-	summary: "Model"
+	summary: "Model",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"underscore"
 	], ["server", "client"]);
 
-	api.add_files([
+	api.addFiles([
 		"model.js"
 	], ["server", "client"]);
 

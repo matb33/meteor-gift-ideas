@@ -1,18 +1,21 @@
 Package.describe({
-	summary: "App settings for moment.js, and also implies availability of moment symbol"
+	summary: "App settings for moment.js, and also implies availability of moment symbol",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
-		"moment",
-		"underscore"
+		"underscore",
+		"mrt:moment"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"calendar.js"
 	], "client");
 
 	api.imply([
-		"moment"
+		"mrt:moment"
 	]);
 });

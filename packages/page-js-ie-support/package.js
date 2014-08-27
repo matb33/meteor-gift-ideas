@@ -1,7 +1,9 @@
 Package.describe({
-  summary: "Tiny ~1200 byte Express-inspired client-side router"
+  summary: "Tiny ~1200 byte Express-inspired client-side router",
+  version: "1.3.3"
 });
 
-Package.on_use(function (api, where) {
-  api.add_files('page-js/index.js', 'client');
+Package.onUse(function (api, where) {
+  api.versionsFrom('0.9.0');
+  api.addFiles('page-js/index.js', 'client');
 });

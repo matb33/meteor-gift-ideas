@@ -1,23 +1,26 @@
 Package.describe({
-	summary: "App list editor"
+	summary: "App list editor",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
-		"router",
 		"deps",
 		"session",
 		"templating",
 		"less",
 		"jquery",
 		"underscore",
+		"router",
 		"app-bootstrap",
 		"app-models-lists-ideas",
 		"app-theme-shared",
 		"app-idea-examples"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"routing.js",
 		"subscribe.js",
 		"listEditor.html",
@@ -33,7 +36,7 @@ Package.on_use(function (api) {
 		"styles.less"
 	], "client");
 
-	api.add_files([
+	api.addFiles([
 		"publish.js"
 	], "server");
 });

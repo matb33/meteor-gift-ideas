@@ -1,13 +1,16 @@
 Package.describe({
-	summary: "App terms of service and privacy policy partial"
+	summary: "App terms of service and privacy policy partial",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"templating"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"terms.html",
 		"copyright.html"
 	], "client");

@@ -1,13 +1,16 @@
 Package.describe({
-	summary: "Font Awesome 4.0.3 (must be instantiated by an app package)"
+	summary: "Font Awesome 4.0.3 (must be instantiated by an app package)",
+	version: "4.0.3"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"less"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"fonts/FontAwesome.otf",
 		"fonts/fontawesome-webfont.eot",
 		"fonts/fontawesome-webfont.svg",
@@ -15,7 +18,7 @@ Package.on_use(function (api) {
 		"fonts/fontawesome-webfont.woff"
 	], "client");
 
-	api.add_files([
+	api.addFiles([
 		"less/variables.lessimport",
 		"less/mixins.lessimport",
 		"less/path.lessimport",

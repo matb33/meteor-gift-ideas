@@ -1,17 +1,20 @@
 Package.describe({
-	summary: "App idea examples"
+	summary: "App idea examples",
+	version: "1.0.0"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+	api.versionsFrom("0.9.0");
+
 	api.use([
 		"underscore"
 	]);
 
-	api.add_files([
+	api.addFiles([
 		"idea-examples.js"
 	], ["client", "server"]);
 
-	api.add_files([
+	api.addFiles([
 		"idea-examples.txt"
 	], "server");
 

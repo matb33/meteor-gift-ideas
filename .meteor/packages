@@ -4,6 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-moment
-app-index
-collection-hooks
+mrt:moment@2.6.0
+app-index@1.0.0
+matb33:collection-hooks@0.7.3
