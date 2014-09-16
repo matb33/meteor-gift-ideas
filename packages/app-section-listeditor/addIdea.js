@@ -4,10 +4,6 @@ Meteor.startup(function () {
 	});
 });
 
-Template.addIdea.ideaText = function () {
-	return Session.get("ideaText");
-};
-
 Template.addIdea.disabled = function () {
 	return !Session.get("ideaText");
 };
@@ -20,11 +16,11 @@ Template.addIdea.events({
 	"submit form": function (evt, template) {
 		evt.preventDefault();
 
-		var text = Session.get("ideaText");
+		var $text = template.$("[name='text']");
+		var text = $text.val();
 
 		Ideas.insert({text: text}, function (err, result) {
-			if (!err) Session.set("ideaText", "");
-			var $text = template.$("[name='text']");
+			if (!err) $text.val("");
 
 			IdeaExamples.getRandom(function (ideaExample) {
 				Session.set("ideaExample", ideaExample);

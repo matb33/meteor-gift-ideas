@@ -1,4 +1,4 @@
-UI.registerHelper("renderPage", function (name) {
+Blaze.registerHelper("renderPage", function (name) {
   if (!_.isString(name))
     name = Meteor.Router.page();
 
@@ -6,6 +6,6 @@ UI.registerHelper("renderPage", function (name) {
   return Template[name];//.extend({data: null});
 });
 
-UI.registerHelper("currentPage", function () {
+Blaze.registerHelper("currentPage", function () {
   return Meteor.Router.page();
 });

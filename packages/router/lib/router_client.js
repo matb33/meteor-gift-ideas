@@ -84,8 +84,8 @@
       return Meteor.absoluteUrl(path.substring(1));
     }
     
-    UI.registerHelper(pathName, _.bind(self[pathName], self));
-    UI.registerHelper(urlName, _.bind(self[urlName], self));
+    Blaze.registerHelper(pathName, _.bind(self[pathName], self));
+    Blaze.registerHelper(urlName, _.bind(self[urlName], self));
   }
   
   Router.prototype.page = function() {

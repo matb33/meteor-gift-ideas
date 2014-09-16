@@ -54,6 +54,10 @@
     ],
     [
       "application-configuration",
+      "1.0.2"
+    ],
+    [
+      "base64",
       "1.0.0"
     ],
     [
@@ -62,7 +66,7 @@
     ],
     [
       "blaze",
-      "1.0.3"
+      "2.0.0"
     ],
     [
       "bootstrap3",
@@ -77,16 +81,20 @@
       "1.0.0"
     ],
     [
+      "ddp",
+      "1.0.8"
+    ],
+    [
       "deps",
-      "1.0.1"
+      "1.0.3"
     ],
     [
       "ejson",
-      "1.0.0"
+      "1.0.2"
     ],
     [
       "follower-livedata",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "fontawesome",
@@ -98,7 +106,7 @@
     ],
     [
       "htmljs",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "id-map",
@@ -114,27 +122,23 @@
     ],
     [
       "less",
-      "1.0.5"
-    ],
-    [
-      "livedata",
-      "1.0.7"
+      "1.0.8"
     ],
     [
       "logging",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "matb33:collection-hooks",
-      "0.7.3"
+      "0.7.6"
     ],
     [
       "meteor",
-      "1.0.2"
+      "1.1.0"
     ],
     [
       "minimongo",
-      "1.0.1"
+      "1.0.3"
     ],
     [
       "model",
@@ -145,12 +149,12 @@
       "2.6.2"
     ],
     [
-      "mongo-livedata",
-      "1.0.3"
+      "mongo",
+      "1.0.5"
     ],
     [
       "observe-sequence",
-      "1.0.1"
+      "1.0.2"
     ],
     [
       "ordered-dict",
@@ -166,7 +170,11 @@
     ],
     [
       "reactive-dict",
-      "1.0.0"
+      "1.0.2"
+    ],
+    [
+      "reactive-var",
+      "1.0.1"
     ],
     [
       "retry",
@@ -178,7 +186,7 @@
     ],
     [
       "session",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "startup",
@@ -186,11 +194,15 @@
     ],
     [
       "templating",
-      "1.0.4"
+      "1.0.6"
+    ],
+    [
+      "tracker",
+      "1.0.2"
     ],
     [
       "ui",
-      "1.0.0"
+      "1.0.2"
     ],
     [
       "underscore",
@@ -198,6 +210,6 @@
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.25",
+  "toolVersion": "meteor-tool@1.0.30",
   "format": "1.0"
 }
